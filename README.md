@@ -16,7 +16,8 @@ API Yatube
 4. source env/Scripts/activate
 5. pip install -r requirements.txt
 6. cd yatube_api/
-7. python manage.py runserver
+7. python manage.py migrate
+8. python manage.py runserver
 
 Всё.
 
