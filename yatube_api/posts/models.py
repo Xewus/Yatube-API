@@ -70,8 +70,10 @@ class Follow(models.Model):
                                   verbose_name='Автор')
 
     class Meta:
-        models.UniqueConstraint = (
-            ['user', 'following'], '%(app_label)s_%(class)s_is_adult')
+        constraints = [
+            models.UniqueConstraint(
+                fields=('user', 'following'),
+                name='unique_follow')]
 
     def __str__(self) -> str:
         return f'{self.user.username}-->{self.following.username}'
