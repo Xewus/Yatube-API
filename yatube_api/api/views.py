@@ -2,7 +2,7 @@ from api.permissions import AuthorOrReadOnly, UserOnly
 from api.serializers import (CommentSerializer, FollowSerializer,
                              GroupSerializer, PostSerializer)
 from django.shortcuts import get_object_or_404
-from posts.models import Comment, Follow, Group, Post, User
+from posts.models import Follow, Group, Post, User
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
