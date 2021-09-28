@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}The Post №{{ post.id }}{% endblock title %}
+{% block content %}
+
+  <div class="container">
+    {% include "includes/post_item.html" with post=post slice_not=True %}
+    {% include 'includes/comments.html' with comments=post.comments.all %}
+  </div>
+
+  {% include "includes/paginator.html" with items=page paginator=paginator%}
+
+{% endblock content %}

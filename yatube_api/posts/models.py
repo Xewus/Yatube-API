@@ -1,5 +1,5 @@
-from django.contrib.auth import get_user_model
 from django.db import models
+from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
@@ -12,6 +12,7 @@ class Group(models.Model):
     class Meta:
         verbose_name = 'Сообщество'
         verbose_name_plural = 'Сообщества'
+        ordering = ['title']
 
     def __str__(self) -> str:
         return self.title
@@ -70,6 +71,8 @@ class Follow(models.Model):
                                   verbose_name='Автор')
 
     class Meta:
+        verbose_name = 'Подписки'
+        ordering = ['following']
         constraints = [
             models.UniqueConstraint(
                 fields=('user', 'following'),
