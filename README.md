@@ -10,7 +10,7 @@ API Yatube
 посредством  JWT-токена.
 
 Инструкции по установке и запуску через терминал:
-...
+
 1. git clone https://github.com/Xewus/api_final_yatube
 2. cd api_final_yatube/
 3. python -m venv env
@@ -19,7 +19,7 @@ API Yatube
 6. cd yatube_api/
 7. python manage.py migrate
 8. python manage.py runserver
-...
+
 Всё.
 
 Документация будет по ссылке http://localhost:8000/redoc/.
