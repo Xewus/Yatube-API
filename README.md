@@ -20,6 +20,5 @@ API Yatube
 7. python manage.py migrate
 8. python manage.py runserver
 
-Всё.
 
-Документация будет по ссылке http://localhost:8000/redoc/.
+Документация будет по ссылке http://localhost:8000/redoc/. (Надо починить - вытащить из первого коммита)
