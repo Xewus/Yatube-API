@@ -17,7 +17,7 @@ git clone https://github.com/Xewus/api_final_yatube
 cd api_final_yatube/
 ```
 ```
-python -m venv env
+python3 -m venv env
 ```
 ```
 source env/Scripts/activate
