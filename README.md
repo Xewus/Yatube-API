@@ -19,8 +19,13 @@ cd api_final_yatube/
 ```
 python3 -m venv env
 ```
+for Windows:
 ```
 source env/Scripts/activate
+```
+for Linux:
+```
+. env/bin/activate
 ```
 ```
 pip install -r requirements.txt
