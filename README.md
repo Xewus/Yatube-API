@@ -1,6 +1,6 @@
-API Yatube
+# API Yatube
 
-"Yatube" - социальная сеть.
+### "Yatube" - социальная сеть.
 
 К ранее созданному проекту (https://github.com/Xewus/Yatube) добавлено API испоьзуя Django Rest Framework.
 Взаимодествие зарегистрированных пользователей с API требует аутентификации
